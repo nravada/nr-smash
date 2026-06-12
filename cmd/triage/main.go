@@ -2,7 +2,8 @@
 //
 // Inputs:  configured list of GitHub repos to watch
 // Outputs: bug.Bug records with Source=repo-issue|repo-pr-comment|repo-lint
-//          and (where possible) Repo and Tier set
+//
+//	and (where possible) Repo and Tier set
 //
 // See docs/components/triage-agent.md for the full contract.
 package main

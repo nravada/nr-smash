@@ -6,12 +6,26 @@
 *.dylib
 bin/
 dist/
+collector
+resolver
+scheduler
+triage
+search
 
 # Test outputs
 *.test
 *.out
 coverage.txt
 coverage.html
+
+# Collector outputs
+*.jsonl
+collector.log
+bugs.jsonl
+demo-bugs.jsonl
+collector-output.jsonl
+team-jira-bugs.json
+*-jira-bugs.json
 
 # Go workspace
 go.work
