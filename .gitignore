@@ -47,3 +47,6 @@ go.work.sum
 .smash/
 .cache/
 data/
+
+# claude-flow MCP runtime state (memory.db, hive, sessions)
+.swarm/
