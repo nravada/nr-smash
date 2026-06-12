@@ -1,0 +1,33 @@
+# CODEOWNERS — auto-tag the right person on every PR.
+#
+# Replace @TODO-* placeholders with the GitHub username of each component owner
+# before the demo. Until replaced, all PRs default to @rmalhan-thatsit for review.
+#
+# Reference: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default — anything not matched below
+*                                @rmalhan-thatsit @nravada
+
+# Component ownership
+/cmd/triage/                     @TODO-triage-owner @rmalhan-thatsit
+/cmd/collector/                  @TODO-collector-owner @rmalhan-thatsit
+/cmd/scheduler/                  @TODO-scheduler-owner @rmalhan-thatsit
+/cmd/resolver/                   @rmalhan-thatsit
+/cmd/search/                     @TODO-search-owner @rmalhan-thatsit
+
+# Per-component docs
+/docs/components/triage-agent.md     @TODO-triage-owner @rmalhan-thatsit
+/docs/components/bug-collector.md    @TODO-collector-owner @rmalhan-thatsit
+/docs/components/scheduler.md        @TODO-scheduler-owner @rmalhan-thatsit
+/docs/components/resolver.md         @rmalhan-thatsit
+/docs/components/search.md           @TODO-search-owner @rmalhan-thatsit
+
+# Shared contracts — every component owner reviews these
+/internal/bug/                   @rmalhan-thatsit @TODO-triage-owner @TODO-collector-owner @TODO-scheduler-owner @TODO-search-owner
+/internal/memory/                @rmalhan-thatsit @TODO-search-owner
+/internal/priority/              @rmalhan-thatsit @TODO-scheduler-owner
+
+# Architecture and process docs — Rahul reviews
+/README.md                       @rmalhan-thatsit
+/ARCHITECTURE.md                 @rmalhan-thatsit
+/CONTRIBUTING.md                 @rmalhan-thatsit
