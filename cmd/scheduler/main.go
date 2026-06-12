@@ -4,7 +4,8 @@
 //
 // Inputs:  collector + triage outputs (in-process or via stdout)
 // Outputs: priority-ordered queue of bug.Bug records (HTTP, gRPC, or
-//          shared-memory — implementation choice).
+//
+//	shared-memory — implementation choice).
 //
 // See docs/components/scheduler.md for the full contract.
 package main

@@ -1,0 +1,44 @@
+[
+  {
+    "type": "message",
+    "ts": "1700000000.123456",
+    "user": "U1234567",
+    "text": "Seeing a critical bug in production - database connections are timing out after 30 seconds. This started happening after the latest deploy yesterday. Error message: 'connection pool exhausted'. Affects all MSSQL queries."
+  },
+  {
+    "type": "message",
+    "ts": "1700000001.123457",
+    "user": "U1234568",
+    "text": "Thanks everyone for the help earlier! Really appreciate it."
+  },
+  {
+    "type": "message",
+    "ts": "1700000002.123458",
+    "user": "U1234569",
+    "text": "Bug report: NullPointerException in the payment processor when processing refunds. Stack trace shows it's happening at RefundHandler.process line 45. Happens consistently when amount is over $1000."
+  },
+  {
+    "type": "message",
+    "ts": "1700000003.123459",
+    "user": "U1234570",
+    "text": "Anyone want to grab lunch?"
+  },
+  {
+    "type": "message",
+    "ts": "1700000004.123460",
+    "user": "U1234571",
+    "text": "URGENT: The nri-mssql integration is failing to collect metrics after the server restarts. Logs show 'authentication failed' but the credentials are definitely correct. This is blocking our customer rollout."
+  },
+  {
+    "type": "message",
+    "ts": "1700000005.123461",
+    "user": "U1234572",
+    "text": "Good morning team!"
+  },
+  {
+    "type": "message",
+    "ts": "1700000006.123462",
+    "user": "U1234573",
+    "text": "Found a memory leak in the PostgreSQL integration. After running for 48 hours, memory usage goes from 100MB to 2GB. Profiling shows goroutines are not being cleaned up properly in the query executor."
+  }
+]

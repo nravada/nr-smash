@@ -1,0 +1,47 @@
+[
+  {
+    "key": "DI-1234",
+    "fields": {
+      "summary": "Fix connection pooling bug in database observability",
+      "description": "Connection pool gets exhausted under high load causing timeout errors. Need to increase pool size and add better connection recycling.",
+      "reporter": {
+        "accountId": "5b10ac8d82e05b22cc7d4ef5",
+        "displayName": "John Doe"
+      },
+      "labels": ["bug", "backend", "database", "sev2"],
+      "status": {
+        "name": "Open"
+      }
+    }
+  },
+  {
+    "key": "DI-1235",
+    "fields": {
+      "summary": "MSSQL integration authentication failures after v2.3 upgrade",
+      "description": "After upgrading to v2.3, MSSQL integration fails to authenticate even with correct credentials. Error logs show 'Login failed for user' but credentials are verified correct in SQL Server.",
+      "reporter": {
+        "accountId": "5a20bd9e92e05b33dd8e5fg6",
+        "displayName": "Jane Smith"
+      },
+      "labels": ["bug", "mssql", "customer-asked", "sev1"],
+      "status": {
+        "name": "In Progress"
+      }
+    }
+  },
+  {
+    "key": "DI-1236",
+    "fields": {
+      "summary": "Memory leak in PostgreSQL metrics collector",
+      "description": "Long-running PostgreSQL integration shows steady memory growth over 24-48 hours eventually causing OOM. Profiling shows goroutine leak in query executor.",
+      "reporter": {
+        "accountId": "6c31ce0f93f16c44ee9f6gh7",
+        "displayName": "Bob Johnson"
+      },
+      "labels": ["bug", "postgres", "performance"],
+      "status": {
+        "name": "To Do"
+      }
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "key": "NRPRIV-5647",
+    "fields": {
+      "summary": "Database observability agent crashing on high cardinality metrics",
+      "description": "The DB-O11y agent crashes when encountering tables with >1000 unique column names. Memory usage spikes to 4GB before OOM kill. Affects customer deployments in AWS RDS.",
+      "reporter": {
+        "accountId": "712020:015ea57b-6dd6-48c9-a22d-0870c615d58d",
+        "displayName": "Akash Reddy"
+      },
+      "labels": ["bug", "database", "sev1", "customer-impacting"],
+      "status": {
+        "name": "In Progress"
+      }
+    }
+  },
+  {
+    "key": "NRPRIV-5523",
+    "fields": {
+      "summary": "MSSQL integration fails SSL handshake with Azure SQL",
+      "description": "After upgrading to v3.2, MSSQL integration cannot connect to Azure SQL databases using SSL. Error: 'x509: certificate signed by unknown authority'. Works fine with on-prem SQL Server.",
+      "reporter": {
+        "accountId": "5b10ac8d82e05b22cc7d4ef5",
+        "displayName": "Sarah Chen"
+      },
+      "labels": ["bug", "mssql", "azure", "sev2"],
+      "status": {
+        "name": "Open"
+      }
+    }
+  },
+  {
+    "key": "NRPRIV-5401",
+    "fields": {
+      "summary": "PostgreSQL slow query monitoring missing bind parameters",
+      "description": "The nri-postgresql integration captures slow queries but strips out bind parameters, making debugging impossible. Query shows `SELECT * FROM users WHERE id = $1` instead of actual ID value.",
+      "reporter": {
+        "accountId": "6c31ce0f93f16c44ee9f6gh7",
+        "displayName": "Mike Rodriguez"
+      },
+      "labels": ["bug", "postgres", "enhancement-request"],
+      "status": {
+        "name": "To Do"
+      }
+    }
+  },
+  {
+    "key": "NRPRIV-5298",
+    "fields": {
+      "summary": "Oracle integration connection pool leak on network failures",
+      "description": "When Oracle database becomes temporarily unreachable, the integration doesn't release connections properly. Pool grows from 10 to 500+ connections over 24 hours, eventually exhausting file descriptors.",
+      "reporter": {
+        "accountId": "7d42df1g04g27d55ff0g7hi8",
+        "displayName": "Lisa Park"
+      },
+      "labels": ["bug", "oracle", "memory-leak", "sev1"],
+      "status": {
+        "name": "In Progress"
+      }
+    }
+  },
+  {
+    "key": "NRPRIV-5187",
+    "fields": {
+      "summary": "MongoDB integration incorrectly reports replica set lag",
+      "description": "The nri-mongodb integration reports replication lag in milliseconds but the MongoDB oplog timestamp is in seconds. This causes false alerts showing 1000x higher lag than actual. Discovered during customer escalation.",
+      "reporter": {
+        "accountId": "8e53eg2h15h38e66gg1h8ij9",
+        "displayName": "David Kim"
+      },
+      "labels": ["bug", "mongodb", "customer-asked", "sev2"],
+      "status": {
+        "name": "Open"
+      }
+    }
+  }
+]

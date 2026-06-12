@@ -76,10 +76,10 @@ const (
 type Tier string
 
 const (
-	TierTrivial         Tier = "trivial"
-	TierStandard        Tier = "standard"
-	TierArchitectural   Tier = "architectural"
-	TierCustomerFacing  Tier = "customer-facing"
+	TierTrivial        Tier = "trivial"
+	TierStandard       Tier = "standard"
+	TierArchitectural  Tier = "architectural"
+	TierCustomerFacing Tier = "customer-facing"
 )
 
 // Status walks the bug through the pipeline.
